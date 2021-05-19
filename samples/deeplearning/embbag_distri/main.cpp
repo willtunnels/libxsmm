@@ -33,6 +33,8 @@
 #define omp_get_max_threads() (1)
 #endif
 
+#define CACHE_LINE_SIZE 64
+
 #ifdef RTM_DEBUG
 int rtm_stats[1000][16];
 #endif
@@ -56,6 +58,13 @@ struct EmbeddingInOut {
   DTyp *gradout;
   DTyp *grads;
 };
+
+void flushall(const void* p_, size_t nbytes) {
+  const unsigned char* p = (const unsigned char*)p_;
+  for (size_t i = 0; i < nbytes; i += CACHE_LINE_SIZE) {
+    _mm_clflush(p + i);
+  }
+}
 
 // based on https://www.csee.usf.edu/~kchriste/tools/genzipf.c
 int zipf_dist(double alpha, int M)
@@ -260,6 +269,7 @@ int E = 64;
 int P = 100;
 int M = 1000000;
 int S = 8;
+int flush = 0;
 double alpha = 0.0;
 
 #define my_printf(fmt, args...) printf("[%d] " fmt, my_rank, args)
@@ -278,6 +288,7 @@ int main(int argc, char * argv[]) {
     printf("M: Number of rows per table (= %d)\n", M);
     printf("S: Number of Tables (= %d)\n", S);
     printf("P: Average number of indices per look up (= %d)\n", P);
+    printf("flush: Use 0 if you do not wish to flush the cache hierarchy on every iteration");
     printf("alpha: Alpha value for Zipf distribution to generate Indices. Use 0 for uniform distribution");
     dist_fini();
     exit(0);
@@ -291,10 +302,11 @@ int main(int argc, char * argv[]) {
     if(argc > i) M = atoi(argv[i++]);
     if(argc > i) S = atoi(argv[i++]);
     if(argc > i) P = atoi(argv[i++]);
+    if(argc > i) flush = atoi(argv[i++]);
     if(argc > i) alpha = atof(argv[i++]);
   }
 
-  printf("Using: iters: %d N: %d E: %d M: %d S: %d P: %d alpha: %f\n", iters, N, E, M, S, P, alpha);
+  printf("Using: iters: %d N: %d E: %d M: %d S: %d P: %d flush: %d alpha: %f\n", iters, N, E, M, S, P, flush, alpha);
 
 
 #if defined(USE_RTM) && defined(RTM_DEBUG)
@@ -385,6 +397,10 @@ int main(int argc, char * argv[]) {
     unpackTime += t5-t4;
     fwdA2ATime += t3-t2;
     bwdA2ATime += t4-t3;
+
+    if (flush) {
+      flushall(eb[0]->weight_, M * E * sizeof(DTyp));
+    }
   }
   double t1 = get_time();
 // #ifdef VERIFY_CORRECTNESS
@@ -394,7 +410,6 @@ int main(int argc, char * argv[]) {
 //     checksum += psum;
 //   }
 // #endif
-  printf("done\n");
 #ifdef STREAMING_WRITES
   const size_t rfo = 1;
 #else
@@ -406,15 +421,14 @@ int main(int argc, char * argv[]) {
   size_t bwdBytes = ((size_t)rfo*tNS*E + (size_t)iters*LS*N*E) * sizeof(DTyp) + ((size_t)tNS) * sizeof(ITyp);
   size_t updBytes = ((size_t)2*tU*E + (size_t)tNS*E) * sizeof(DTyp) + ((size_t)tNS) * sizeof(ITyp);
 
-  my_printf("USE RTM = %d  STREAMING STORES = %d\n", use_rtm, rfo == 1 ? 1 : 0);
+  my_printf("USE RTM = %d  STREAMING STORES = %d  omp_max_threads()=%d\n", use_rtm, rfo == 1 ? 1 : 0, omp_get_max_threads());
   my_printf("Iters = %d, LS = %d, N = %d, M = %d, E = %d, avgNS = %d, avgU = %d, P = %d\n", iters, LS, N, M, E, tNS/(iters*LS), tU/(iters*LS), P);
   //printf("Time: Fwd: %.3f ms Bwd: %.3f ms Upd: %.3f  Total: %.3f\n", fwdTime, bwdTime, updTime, t1-t0);
   my_printf("Per Iter  Time: Fwd: %.3f ms Bwd: - ms Upd: - ms A2A: %.3f ms Total: %.3f ms\n", fwdTime/(iters), (fwdA2ATime+bwdA2ATime+packTime+unpackTime)/(iters), (t1-t0)/(iters));
   my_printf("Per Table Time: Fwd: %.3f ms Bwd: - ms Upd: - ms Total: %.3f ms\n", fwdTime/(iters*LS), (t1-t0)/(iters*LS));
 
   my_printf("Per Iter  A2ATime: Fwd: %.3f ms Bwd: %.3f ms Pack: %.3f ms Unpack: %.3f ms \n", fwdA2ATime/(iters), bwdA2ATime/(iters), packTime/(iters), unpackTime/(iters));
-  my_printf("BW: FWD: %.3f   BWD: - GB/s   UPD: - GB/s\n", fwdBytes*1e-6/fwdTime);
-
+  my_printf("FWD: %.3f GB/s   BWD: - GB/s   UPD: - GB/s\n", fwdBytes*1e-6/fwdTime);
 
 #ifdef VERIFY_CORRECTNESS
   printf("Checksum = %g\n", checksum);

@@ -1,0 +1,394 @@
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 22.195 ms Bwd: - ms Upd: - ms A2A: 1.103 ms Total: 23.300 ms
+[0] Per Table Time: Fwd: 22.195 ms Bwd: - ms Upd: - ms Total: 23.300 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.446 ms Unpack: 0.655 ms 
+[0] FWD: 0.393 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 22.357 ms Bwd: - ms Upd: - ms A2A: 0.799 ms Total: 23.158 ms
+[0] Per Table Time: Fwd: 22.357 ms Bwd: - ms Upd: - ms Total: 23.158 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.356 ms Unpack: 0.442 ms 
+[0] FWD: 0.390 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.996 ms Bwd: - ms Upd: - ms A2A: 1.054 ms Total: 23.053 ms
+[0] Per Table Time: Fwd: 21.996 ms Bwd: - ms Upd: - ms Total: 23.053 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.452 ms Unpack: 0.602 ms 
+[0] FWD: 0.397 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.554 ms Bwd: - ms Upd: - ms A2A: 1.038 ms Total: 22.595 ms
+[0] Per Table Time: Fwd: 21.554 ms Bwd: - ms Upd: - ms Total: 22.595 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.449 ms Unpack: 0.588 ms 
+[0] FWD: 0.405 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 22.085 ms Bwd: - ms Upd: - ms A2A: 0.808 ms Total: 22.895 ms
+[0] Per Table Time: Fwd: 22.085 ms Bwd: - ms Upd: - ms Total: 22.895 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.357 ms Unpack: 0.450 ms 
+[0] FWD: 0.395 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.395 ms Bwd: - ms Upd: - ms A2A: 1.055 ms Total: 22.453 ms
+[0] Per Table Time: Fwd: 21.395 ms Bwd: - ms Upd: - ms Total: 22.453 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.454 ms Unpack: 0.601 ms 
+[0] FWD: 0.408 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.894 ms Bwd: - ms Upd: - ms A2A: 1.059 ms Total: 22.955 ms
+[0] Per Table Time: Fwd: 21.894 ms Bwd: - ms Upd: - ms Total: 22.955 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.465 ms Unpack: 0.592 ms 
+[0] FWD: 0.399 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 22.351 ms Bwd: - ms Upd: - ms A2A: 1.059 ms Total: 23.412 ms
+[0] Per Table Time: Fwd: 22.351 ms Bwd: - ms Upd: - ms Total: 23.412 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.453 ms Unpack: 0.604 ms 
+[0] FWD: 0.391 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.779 ms Bwd: - ms Upd: - ms A2A: 1.089 ms Total: 22.871 ms
+[0] Per Table Time: Fwd: 21.779 ms Bwd: - ms Upd: - ms Total: 22.871 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.489 ms Unpack: 0.599 ms 
+[0] FWD: 0.401 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.300 ms Bwd: - ms Upd: - ms A2A: 1.054 ms Total: 22.357 ms
+[0] Per Table Time: Fwd: 21.300 ms Bwd: - ms Upd: - ms Total: 22.357 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.452 ms Unpack: 0.601 ms 
+[0] FWD: 0.410 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.609 ms Bwd: - ms Upd: - ms A2A: 0.805 ms Total: 1840.771 ms
+[0] Per Table Time: Fwd: 21.609 ms Bwd: - ms Upd: - ms Total: 1840.771 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.351 ms Unpack: 0.453 ms 
+[0] FWD: 0.404 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.839 ms Bwd: - ms Upd: - ms A2A: 1.054 ms Total: 1847.996 ms
+[0] Per Table Time: Fwd: 21.839 ms Bwd: - ms Upd: - ms Total: 1847.996 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.453 ms Unpack: 0.600 ms 
+[0] FWD: 0.400 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 22.435 ms Bwd: - ms Upd: - ms A2A: 0.930 ms Total: 1850.132 ms
+[0] Per Table Time: Fwd: 22.435 ms Bwd: - ms Upd: - ms Total: 1850.132 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.427 ms Unpack: 0.502 ms 
+[0] FWD: 0.389 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.528 ms Bwd: - ms Upd: - ms A2A: 0.927 ms Total: 1866.321 ms
+[0] Per Table Time: Fwd: 21.528 ms Bwd: - ms Upd: - ms Total: 1866.321 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.460 ms Unpack: 0.467 ms 
+[0] FWD: 0.406 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.732 ms Bwd: - ms Upd: - ms A2A: 1.054 ms Total: 1838.191 ms
+[0] Per Table Time: Fwd: 21.732 ms Bwd: - ms Upd: - ms Total: 1838.191 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.453 ms Unpack: 0.600 ms 
+[0] FWD: 0.402 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 22.080 ms Bwd: - ms Upd: - ms A2A: 1.092 ms Total: 1852.597 ms
+[0] Per Table Time: Fwd: 22.080 ms Bwd: - ms Upd: - ms Total: 1852.597 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.497 ms Unpack: 0.594 ms 
+[0] FWD: 0.395 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.332 ms Bwd: - ms Upd: - ms A2A: 1.113 ms Total: 1836.400 ms
+[0] Per Table Time: Fwd: 21.332 ms Bwd: - ms Upd: - ms Total: 1836.400 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.458 ms Unpack: 0.654 ms 
+[0] FWD: 0.409 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.981 ms Bwd: - ms Upd: - ms A2A: 1.048 ms Total: 1843.058 ms
+[0] Per Table Time: Fwd: 21.981 ms Bwd: - ms Upd: - ms Total: 1843.058 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.462 ms Unpack: 0.585 ms 
+[0] FWD: 0.397 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 22.197 ms Bwd: - ms Upd: - ms A2A: 1.020 ms Total: 1847.414 ms
+[0] Per Table Time: Fwd: 22.197 ms Bwd: - ms Upd: - ms Total: 1847.414 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.429 ms Unpack: 0.591 ms 
+[0] FWD: 0.393 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 1 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 1, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32094, avgU = 32042, P = 32
+[0] Per Iter  Time: Fwd: 21.900 ms Bwd: - ms Upd: - ms A2A: 1.059 ms Total: 1852.170 ms
+[0] Per Table Time: Fwd: 21.900 ms Bwd: - ms Upd: - ms Total: 1852.170 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.461 ms Unpack: 0.596 ms 
+[0] FWD: 0.399 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.219 ms Bwd: - ms Upd: - ms A2A: 0.816 ms Total: 18.037 ms
+[0] Per Table Time: Fwd: 17.219 ms Bwd: - ms Upd: - ms Total: 18.037 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.232 ms Unpack: 0.584 ms 
+[0] FWD: 0.505 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 16.977 ms Bwd: - ms Upd: - ms A2A: 0.771 ms Total: 17.749 ms
+[0] Per Table Time: Fwd: 16.977 ms Bwd: - ms Upd: - ms Total: 17.749 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.231 ms Unpack: 0.539 ms 
+[0] FWD: 0.512 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.482 ms Bwd: - ms Upd: - ms A2A: 0.812 ms Total: 18.296 ms
+[0] Per Table Time: Fwd: 17.482 ms Bwd: - ms Upd: - ms Total: 18.296 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.234 ms Unpack: 0.578 ms 
+[0] FWD: 0.497 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.539 ms Bwd: - ms Upd: - ms A2A: 0.754 ms Total: 18.294 ms
+[0] Per Table Time: Fwd: 17.539 ms Bwd: - ms Upd: - ms Total: 18.294 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.231 ms Unpack: 0.522 ms 
+[0] FWD: 0.496 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.199 ms Bwd: - ms Upd: - ms A2A: 0.828 ms Total: 18.028 ms
+[0] Per Table Time: Fwd: 17.199 ms Bwd: - ms Upd: - ms Total: 18.028 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.240 ms Unpack: 0.587 ms 
+[0] FWD: 0.505 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.548 ms Bwd: - ms Upd: - ms A2A: 0.806 ms Total: 18.355 ms
+[0] Per Table Time: Fwd: 17.548 ms Bwd: - ms Upd: - ms Total: 18.355 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.224 ms Unpack: 0.581 ms 
+[0] FWD: 0.495 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.005 ms Bwd: - ms Upd: - ms A2A: 0.854 ms Total: 17.861 ms
+[0] Per Table Time: Fwd: 17.005 ms Bwd: - ms Upd: - ms Total: 17.861 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.247 ms Unpack: 0.606 ms 
+[0] FWD: 0.511 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.446 ms Bwd: - ms Upd: - ms A2A: 0.814 ms Total: 18.261 ms
+[0] Per Table Time: Fwd: 17.446 ms Bwd: - ms Upd: - ms Total: 18.261 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.232 ms Unpack: 0.581 ms 
+[0] FWD: 0.498 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.505 ms Bwd: - ms Upd: - ms A2A: 0.770 ms Total: 18.276 ms
+[0] Per Table Time: Fwd: 17.505 ms Bwd: - ms Upd: - ms Total: 18.276 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.218 ms Unpack: 0.552 ms 
+[0] FWD: 0.497 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 17.125 ms Bwd: - ms Upd: - ms A2A: 0.762 ms Total: 17.888 ms
+[0] Per Table Time: Fwd: 17.125 ms Bwd: - ms Upd: - ms Total: 17.888 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.219 ms Unpack: 0.542 ms 
+[0] FWD: 0.508 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.689 ms Bwd: - ms Upd: - ms A2A: 0.725 ms Total: 468.442 ms
+[0] Per Table Time: Fwd: 2.689 ms Bwd: - ms Upd: - ms Total: 468.442 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.202 ms Unpack: 0.522 ms 
+[0] FWD: 3.233 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.657 ms Bwd: - ms Upd: - ms A2A: 0.712 ms Total: 467.290 ms
+[0] Per Table Time: Fwd: 2.657 ms Bwd: - ms Upd: - ms Total: 467.290 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.213 ms Unpack: 0.498 ms 
+[0] FWD: 3.272 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.628 ms Bwd: - ms Upd: - ms A2A: 0.733 ms Total: 468.215 ms
+[0] Per Table Time: Fwd: 2.628 ms Bwd: - ms Upd: - ms Total: 468.215 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.198 ms Unpack: 0.534 ms 
+[0] FWD: 3.308 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.631 ms Bwd: - ms Upd: - ms A2A: 0.727 ms Total: 469.434 ms
+[0] Per Table Time: Fwd: 2.631 ms Bwd: - ms Upd: - ms Total: 469.434 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.208 ms Unpack: 0.518 ms 
+[0] FWD: 3.304 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.608 ms Bwd: - ms Upd: - ms A2A: 0.702 ms Total: 467.325 ms
+[0] Per Table Time: Fwd: 2.608 ms Bwd: - ms Upd: - ms Total: 467.325 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.208 ms Unpack: 0.493 ms 
+[0] FWD: 3.334 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.746 ms Bwd: - ms Upd: - ms A2A: 0.739 ms Total: 468.520 ms
+[0] Per Table Time: Fwd: 2.746 ms Bwd: - ms Upd: - ms Total: 468.520 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.218 ms Unpack: 0.520 ms 
+[0] FWD: 3.166 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.650 ms Bwd: - ms Upd: - ms A2A: 0.746 ms Total: 466.665 ms
+[0] Per Table Time: Fwd: 2.650 ms Bwd: - ms Upd: - ms Total: 466.665 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.207 ms Unpack: 0.539 ms 
+[0] FWD: 3.280 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.724 ms Bwd: - ms Upd: - ms A2A: 0.731 ms Total: 468.530 ms
+[0] Per Table Time: Fwd: 2.724 ms Bwd: - ms Upd: - ms Total: 468.530 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.211 ms Unpack: 0.519 ms 
+[0] FWD: 3.191 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.635 ms Bwd: - ms Upd: - ms A2A: 0.707 ms Total: 468.177 ms
+[0] Per Table Time: Fwd: 2.635 ms Bwd: - ms Upd: - ms Total: 468.177 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.203 ms Unpack: 0.504 ms 
+[0] FWD: 3.299 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 10 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 10, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 31953, avgU = 31904, P = 32
+[0] Per Iter  Time: Fwd: 2.619 ms Bwd: - ms Upd: - ms A2A: 0.721 ms Total: 469.078 ms
+[0] Per Table Time: Fwd: 2.619 ms Bwd: - ms Upd: - ms Total: 469.078 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.207 ms Unpack: 0.513 ms 
+[0] FWD: 3.319 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.171 ms Bwd: - ms Upd: - ms A2A: 0.792 ms Total: 4.965 ms
+[0] Per Table Time: Fwd: 4.171 ms Bwd: - ms Upd: - ms Total: 4.965 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.215 ms Unpack: 0.576 ms 
+[0] FWD: 2.102 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.085 ms Bwd: - ms Upd: - ms A2A: 0.800 ms Total: 4.887 ms
+[0] Per Table Time: Fwd: 4.085 ms Bwd: - ms Upd: - ms Total: 4.887 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.218 ms Unpack: 0.582 ms 
+[0] FWD: 2.146 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.182 ms Bwd: - ms Upd: - ms A2A: 0.780 ms Total: 4.963 ms
+[0] Per Table Time: Fwd: 4.182 ms Bwd: - ms Upd: - ms Total: 4.963 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.213 ms Unpack: 0.566 ms 
+[0] FWD: 2.097 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.092 ms Bwd: - ms Upd: - ms A2A: 0.792 ms Total: 4.885 ms
+[0] Per Table Time: Fwd: 4.092 ms Bwd: - ms Upd: - ms Total: 4.885 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.217 ms Unpack: 0.574 ms 
+[0] FWD: 2.143 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.161 ms Bwd: - ms Upd: - ms A2A: 0.796 ms Total: 4.958 ms
+[0] Per Table Time: Fwd: 4.161 ms Bwd: - ms Upd: - ms Total: 4.958 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.213 ms Unpack: 0.582 ms 
+[0] FWD: 2.107 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.177 ms Bwd: - ms Upd: - ms A2A: 0.796 ms Total: 4.975 ms
+[0] Per Table Time: Fwd: 4.177 ms Bwd: - ms Upd: - ms Total: 4.975 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.216 ms Unpack: 0.579 ms 
+[0] FWD: 2.099 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.020 ms Bwd: - ms Upd: - ms A2A: 0.793 ms Total: 4.815 ms
+[0] Per Table Time: Fwd: 4.020 ms Bwd: - ms Upd: - ms Total: 4.815 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.215 ms Unpack: 0.578 ms 
+[0] FWD: 2.181 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.051 ms Bwd: - ms Upd: - ms A2A: 0.804 ms Total: 4.857 ms
+[0] Per Table Time: Fwd: 4.051 ms Bwd: - ms Upd: - ms Total: 4.857 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.217 ms Unpack: 0.586 ms 
+[0] FWD: 2.164 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.108 ms Bwd: - ms Upd: - ms A2A: 0.795 ms Total: 4.904 ms
+[0] Per Table Time: Fwd: 4.108 ms Bwd: - ms Upd: - ms Total: 4.904 ms
+[0] Per Iter  A2ATime: Fwd: 0.001 ms Bwd: 0.000 ms Pack: 0.213 ms Unpack: 0.581 ms 
+[0] FWD: 2.134 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 0 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 4.071 ms Bwd: - ms Upd: - ms A2A: 0.786 ms Total: 4.858 ms
+[0] Per Table Time: Fwd: 4.071 ms Bwd: - ms Upd: - ms Total: 4.858 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.214 ms Unpack: 0.571 ms 
+[0] FWD: 2.154 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 0.732 ms Bwd: - ms Upd: - ms A2A: 0.698 ms Total: 329.169 ms
+[0] Per Table Time: Fwd: 0.732 ms Bwd: - ms Upd: - ms Total: 329.169 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.187 ms Unpack: 0.510 ms 
+[0] FWD: 11.982 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 0.722 ms Bwd: - ms Upd: - ms A2A: 0.691 ms Total: 328.866 ms
+[0] Per Table Time: Fwd: 0.722 ms Bwd: - ms Upd: - ms Total: 328.866 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.188 ms Unpack: 0.502 ms 
+[0] FWD: 12.151 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 0.713 ms Bwd: - ms Upd: - ms A2A: 0.686 ms Total: 328.300 ms
+[0] Per Table Time: Fwd: 0.713 ms Bwd: - ms Upd: - ms Total: 328.300 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.185 ms Unpack: 0.500 ms 
+[0] FWD: 12.291 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 0.720 ms Bwd: - ms Upd: - ms A2A: 0.706 ms Total: 328.746 ms
+[0] Per Table Time: Fwd: 0.720 ms Bwd: - ms Upd: - ms Total: 328.746 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.187 ms Unpack: 0.519 ms 
+[0] FWD: 12.181 GB/s   BWD: - GB/s   UPD: - GB/s
+Using: iters: 100 N: 1024 E: 64 M: 10000000 S: 1 P: 32 flush: 1 alpha: 0.000000
+[0] USE RTM = 1  STREAMING STORES = 1  omp_max_threads()=68
+[0] Iters = 100, LS = 1, N = 1024, M = 10000000, E = 64, avgNS = 32235, avgU = 32184, P = 32
+[0] Per Iter  Time: Fwd: 0.713 ms Bwd: - ms Upd: - ms A2A: 0.692 ms Total: 328.471 ms
+[0] Per Table Time: Fwd: 0.713 ms Bwd: - ms Upd: - ms Total: 328.471 ms
+[0] Per Iter  A2ATime: Fwd: 0.000 ms Bwd: 0.000 ms Pack: 0.184 ms Unpack: 0.507 ms 
+[0] FWD: 12.302 GB/s   BWD: - GB/s   UPD: - GB/s
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
+srun: error: Unable to create step for job 42731473: Job/step already completing or completed
