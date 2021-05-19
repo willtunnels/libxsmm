@@ -9,6 +9,8 @@
 /* Dhiraj Kalamkar (Intel Corp.)
 ******************************************************************************/
 
+#include <assert.h>
+
 #include <vector>
 #include <time.h>
 #include <sys/syscall.h>
@@ -296,13 +298,16 @@ int main(int argc, char * argv[]) {
 
 
 #if defined(USE_RTM) && defined(RTM_DEBUG)
-  clear_rtm_stats();
+  // clear_rtm_stats();
 #endif
 
   double checksum = 0.0;
 
   int LS = S / my_size;
   int LN = N / my_size;
+  if (LS == 0 || LN == 0) {
+    printf("WARNING: my_size is too big! S=%d, N=%d, my_size=%d\n", S, N, my_size);
+  }
   set_random_seed(777+my_rank);
 
   EmbeddingInOut *eio[iters][LS];
@@ -346,7 +351,7 @@ int main(int argc, char * argv[]) {
   }
 
   double t0 = get_time();
-  double fwdTime = 0.0, bwdTime = 0.0, updTime = 0.0;
+  double fwdTime = 0.0;
   double packTime = 0.0, unpackTime = 0.0, fwdA2ATime = 0.0, bwdA2ATime = 0.0;
 
   for(int i = 0; i < iters; i++) {
@@ -364,31 +369,32 @@ int main(int argc, char * argv[]) {
     unpack_from_a2a(LS, N, E, eio[i], A2Agdst);
     double t5 = get_time();
 
-    for(int s = LS-1; s >= 0; s--) {
-      eb[s]->backward(N, eio[i][s]->NS, eio[i][s]->gradout, eio[i][s]->offsets, eio[i][s]->indices, eio[i][s]->grads);
-    }
+    // for(int s = LS-1; s >= 0; s--) {
+    //   eb[s]->backward(N, eio[i][s]->NS, eio[i][s]->gradout, eio[i][s]->offsets, eio[i][s]->indices, eio[i][s]->grads);
+    // }
     double t6 = get_time();
-    for(int s = 0; s < LS; s++) {
-      eb[s]->update(eio[i][s]->NS, eio[i][s]->grads, eio[i][s]->indices, -0.1);
-    }
+    // for(int s = 0; s < LS; s++) {
+    //   eb[s]->update(eio[i][s]->NS, eio[i][s]->grads, eio[i][s]->indices, -0.1);
+    // }
     double t7 = get_time();
     //printf("Iter %4d: F = %.3f   B = %.3f   U = %.3f\n", i, t1-t0, t2-t1, t3-t2);
     fwdTime += t1-t0;
-    bwdTime += t6-t5;
-    updTime += t7-t6;
+    //bwdTime += t6-t5;
+    //updTime += t7-t6;
     packTime += t2-t1;
     unpackTime += t5-t4;
     fwdA2ATime += t3-t2;
     bwdA2ATime += t4-t3;
   }
   double t1 = get_time();
-#ifdef VERIFY_CORRECTNESS
-  for(int s = 0; s < LS; s++) {
-    double psum = get_checksum(&weight[s][0][0], M*E);
-    //my_printf("PSUM %d: %g\n", SS+s, psum);
-    checksum += psum;
-  }
-#endif
+// #ifdef VERIFY_CORRECTNESS
+//   for(int s = 0; s < LS; s++) {
+//     double psum = get_checksum(&weight[s][0][0], M*E);
+//     my_printf("PSUM %d: %g\n", SS+s, psum);
+//     checksum += psum;
+//   }
+// #endif
+  printf("done\n");
 #ifdef STREAMING_WRITES
   const size_t rfo = 1;
 #else
@@ -403,11 +409,11 @@ int main(int argc, char * argv[]) {
   my_printf("USE RTM = %d  STREAMING STORES = %d\n", use_rtm, rfo == 1 ? 1 : 0);
   my_printf("Iters = %d, LS = %d, N = %d, M = %d, E = %d, avgNS = %d, avgU = %d, P = %d\n", iters, LS, N, M, E, tNS/(iters*LS), tU/(iters*LS), P);
   //printf("Time: Fwd: %.3f ms Bwd: %.3f ms Upd: %.3f  Total: %.3f\n", fwdTime, bwdTime, updTime, t1-t0);
-  my_printf("Per Iter  Time: Fwd: %.3f ms Bwd: %.3f ms Upd: %.3f  A2A: %.3f ms Total: %.3f ms\n", fwdTime/(iters), bwdTime/(iters), updTime/(iters), (fwdA2ATime+bwdA2ATime+packTime+unpackTime)/(iters), (t1-t0)/(iters));
-  my_printf("Per Table Time: Fwd: %.3f ms Bwd: %.3f ms Upd: %.3f  Total: %.3f ms\n", fwdTime/(iters*LS), bwdTime/(iters*LS), updTime/(iters*LS), (t1-t0)/(iters*LS));
+  my_printf("Per Iter  Time: Fwd: %.3f ms Bwd: - ms Upd: - ms A2A: %.3f ms Total: %.3f ms\n", fwdTime/(iters), (fwdA2ATime+bwdA2ATime+packTime+unpackTime)/(iters), (t1-t0)/(iters));
+  my_printf("Per Table Time: Fwd: %.3f ms Bwd: - ms Upd: - ms Total: %.3f ms\n", fwdTime/(iters*LS), (t1-t0)/(iters*LS));
 
   my_printf("Per Iter  A2ATime: Fwd: %.3f ms Bwd: %.3f ms Pack: %.3f ms Unpack: %.3f ms \n", fwdA2ATime/(iters), bwdA2ATime/(iters), packTime/(iters), unpackTime/(iters));
-  my_printf("BW: FWD: %.3f   BWD: %.3f GB/s   UPD: %.3f GB/s\n", fwdBytes*1e-6/fwdTime, bwdBytes*1e-6/bwdTime, updBytes*1e-6/updTime);
+  my_printf("BW: FWD: %.3f   BWD: - GB/s   UPD: - GB/s\n", fwdBytes*1e-6/fwdTime);
 
 
 #ifdef VERIFY_CORRECTNESS
@@ -415,7 +421,7 @@ int main(int argc, char * argv[]) {
 #endif
 
 #if defined(USE_RTM) && defined(RTM_DEBUG)
-  print_rtm_stats();
+  // print_rtm_stats();
 #endif
 
   for(int i = 0; i < LS; i++)

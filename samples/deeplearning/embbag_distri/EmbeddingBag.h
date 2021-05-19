@@ -8,9 +8,9 @@
 ******************************************************************************/
 /* Dhiraj Kalamkar, Evangelos Georganas (Intel Corp.)
 ******************************************************************************/
-#define JIT_REDUCE_COLS_IDX
-#define JIT_REPLICATE_COLS_VAR
-#define JIT_SCALE
+// #define JIT_REDUCE_COLS_IDX
+// #define JIT_REPLICATE_COLS_VAR
+// #define JIT_SCALE
 #if defined( JIT_REDUCE_COLS_IDX) || defined(JIT_REPLICATE_COLS_VAR) || defined(JIT_SCALE)
 #include <libxsmm.h>
 #endif
